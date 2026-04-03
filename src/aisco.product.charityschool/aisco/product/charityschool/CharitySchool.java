@@ -6,6 +6,8 @@ import aisco.financialreport.core.FinancialReport;
 import aisco.financialreport.FinancialReportFactory;
 import aisco.donation.core.Donation;
 import aisco.donation.DonationFactory;
+import aisco.beneficiary.core.Beneficiary;
+import aisco.beneficiary.BeneficiaryFactory;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -77,5 +79,29 @@ public class CharitySchool {
         addDonation();
         int balance = totalincome-totalexpense;
         System.out.println("Balance: "+balance);
+
+        Beneficiary beneficiary = addBeneficiary();
+        System.out.println(beneficiary);
+    }
+
+    public static Beneficiary addBeneficiary()
+    {
+        Beneficiary coreBeneficiary = BeneficiaryFactory.createBeneficiary(
+            "aisco.beneficiary.core.BeneficiaryImpl",
+            1,
+            "Anak Sekolah Pelita Harapan",
+            "Depok",
+            "Penerima manfaat bantuan pendidikan"
+        );
+
+        Beneficiary groupBeneficiary = BeneficiaryFactory.createBeneficiary(
+            "aisco.beneficiary.group.BeneficiaryImpl",
+            coreBeneficiary,
+            "Sekolah",
+            100,
+            "Sekolah Pelita Harapan"
+        );
+
+        return groupBeneficiary;
     }
 }

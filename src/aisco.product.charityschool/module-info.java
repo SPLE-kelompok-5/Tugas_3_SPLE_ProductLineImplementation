@@ -10,4 +10,6 @@ module aisco.product.charityschool {
     requires aisco.financialreport.expense;
     
     requires aisco.donation.pgateway;
+    requires aisco.beneficiary.core;
+    requires aisco.beneficiary.group;
 }
