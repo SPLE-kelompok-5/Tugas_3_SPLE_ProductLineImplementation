@@ -78,7 +78,7 @@ Modules inside `src` folder:
 - aisco.product.yayasanpandhu (Product: YayasanPandhu)
 - aisco.product.hilfuns (Product: Hilfuns)
 - aisco.beneficiary.core
-
+- aisco.beneficiary.group
 
 Notes: 
 - external modules are available inside folder `external`
