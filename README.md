@@ -54,6 +54,7 @@ We use case study Adaptive Information System for Charity Organization (AISCO).
 6. Financial Report: ExpenseWithFrequency
 6. Donation: via DirectPayment
 7. Donation: via Payment Gateway (requires another [product line](https://gitlab.com/RSE-Lab-Fasilkom-UI/student-research/disertasi/s3---maya-retno/simulasi-payment-gateway) )
+8. Beneficiary
 
 There are three products:
 1. Charity School. Features: Activity, Operational, Income, Expense, DonationViaPaymentGateway.
@@ -76,6 +77,8 @@ Modules inside `src` folder:
 - aisco.product.charityschool (Product: CharitySchool)
 - aisco.product.yayasanpandhu (Product: YayasanPandhu)
 - aisco.product.hilfuns (Product: Hilfuns)
+- aisco.beneficiary.core
+
 
 Notes: 
 - external modules are available inside folder `external`
