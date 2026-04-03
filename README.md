@@ -78,6 +78,7 @@ Modules inside `src` folder:
 - aisco.product.yayasanpandhu (Product: YayasanPandhu)
 - aisco.product.hilfuns (Product: Hilfuns)
 - aisco.beneficiary.core
+- aisco.beneficiary.medical
 
 
 Notes: 
